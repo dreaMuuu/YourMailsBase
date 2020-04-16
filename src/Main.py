@@ -12,3 +12,4 @@ print("Do you want to delete clones? Y/N")
 # decision
 print("Do you want to delete incorrect email addresses? Y/N")
 # decision
+print("Your email addresses base is actual. You will find it as: " + newBasePath)
