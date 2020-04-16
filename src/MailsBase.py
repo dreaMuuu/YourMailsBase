@@ -11,4 +11,6 @@ class MailsBase:
         file.close()
 
     def saveBase(self):
-        pass
+        file = open(self.path, "w")
+        file.write(self.mails)
+        file.close()
