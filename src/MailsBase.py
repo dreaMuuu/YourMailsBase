@@ -1,11 +1,13 @@
 class MailsBase:
 
     def __init__(self, path):
-        self.path = path
+        self.path = "./lists/" + path
         self.mails = []
 
     def loadEmailAddresses(self):
-        pass
+        file = open(self.path, "r")
+        self.mails = file.readlines()
+        print(self.mails)
 
     def saveBase(self):
         pass
