@@ -8,6 +8,7 @@ class MailsBase:
         file = open(self.path, "r")
         self.mails = file.readlines()
         print(self.mails)
+        file.close()
 
     def saveBase(self):
         pass
