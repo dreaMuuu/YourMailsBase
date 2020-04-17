@@ -18,7 +18,6 @@ newBasePath = input(">")
 print("Do you want to delete clones? Y/N")
 newEmails = returnWithoutClones(newEmails)
 print(newEmails)
-# decision
 print("Do you want to delete incorrect email addresses? Y/N")
 newEmails = returnOnlyValid(newEmails)
 print(newEmails)
