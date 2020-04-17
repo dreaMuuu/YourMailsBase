@@ -11,7 +11,8 @@ class MailsBase:
 
     def saveBase(self):
         file = open(self.path, "w")
-        file.write(self.mails)
+        for item in self.mails:
+            file.write(item)
         file.close()
 
     def getMails(self):
