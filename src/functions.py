@@ -17,5 +17,10 @@ def returnOnlyValid(currentEmails):
     return newEmails
 
 
-def returnOnlyExists(currentEmails):
-    pass
+def yesOrNo(question):
+    while "Press only Y or N!":
+        reply = str(input(question + ' (y/n): ')).lower().strip()
+        if reply[0] == 'y':
+            return True
+        if reply[0] == 'n':
+            return False

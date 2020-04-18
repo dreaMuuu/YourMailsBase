@@ -1,5 +1,5 @@
 from MailsBase import MailsBase
-from functions import returnWithoutClones, returnOnlyValid
+from functions import returnWithoutClones, returnOnlyValid, yesOrNo
 
 currentBasePath = ""
 newBasePath = ""
@@ -16,9 +16,11 @@ newEmails = actualBase.getMails()
 print("Pass name of new file containing Emails Base with extension")
 newBasePath = input(">")
 print("Do you want to delete clones? Y/N")
+# decision
 newEmails = returnWithoutClones(newEmails)
 print(newEmails)
 print("Do you want to delete incorrect email addresses? Y/N")
+# decision
 newEmails = returnOnlyValid(newEmails)
 print(newEmails)
 newBase = MailsBase(newBasePath)
