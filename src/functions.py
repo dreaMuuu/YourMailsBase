@@ -1,4 +1,6 @@
 from validate_email import validate_email
+from colorama import init
+from termcolor import colored
 import easygui
 import time
 
@@ -10,10 +12,11 @@ def returnWithoutClones(currentEmails):
         if not (mail in newEmails):
             newEmails.append(mail)
         else:
-            print("> deleted clone")
+            print(printArrow() + colored(" deleted clone", 'green'))
             countOfClones += 1
             time.sleep(0.2)
-    print("> Count of deleted clones: " + str(countOfClones))
+    print(printArrow() + " Count of deleted clones: " +
+          colored(str(countOfClones), 'green'))
     return newEmails
 
 
@@ -24,10 +27,11 @@ def returnOnlyValid(currentEmails):
         if validate_email(mail):
             newEmails.append(mail)
         else:
-            print("> deleted invalid address")
+            print(printArrow() + colored(" deleted invalid address", 'green'))
             countOfInvalid += 1
             time.sleep(0.2)
-    print("> Count of deleted not valid addresses: " + str(countOfInvalid))
+    print(printArrow() + " Count of deleted not valid addresses: " +
+          colored(str(countOfInvalid), 'green'))
     return newEmails
 
 
@@ -38,6 +42,14 @@ def yesOrNo(question):
             return True
         elif reply[0] == 'n':
             return False
+
+
+def printWelcomeMessage():
+    print(colored("# YourMailsBase - version 1.0.0 - copyrights @ Piotr Filipek, dreamalltime #", 'blue'))
+
+
+def printArrow():
+    return colored('>', 'red')
 
 
 def openFile():
