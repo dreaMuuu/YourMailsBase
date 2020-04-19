@@ -13,7 +13,9 @@ newEmails = []
 def run():
     printWelcomeMessage()
     print(printArrow() +
-          " Before using app make sure that your base is preapred correctly")
+          " Before using app make sure that your mail addresses base is preapred correctly.")
+    print(printArrow() +
+          " Full instructions of using this app you will find in instructions.txt file.")
     print(printArrow() +
           " Choose .txt file with your base: ")
     print(printArrow(), end='')
@@ -36,7 +38,7 @@ def run():
         print(printArrow() +
               " Ok, so i am not deleting clones")
     print(printArrow(), end='')
-    if yesOrNo(" Do you want to delete incorrect email addresses?"):
+    if yesOrNo(" Do you want to delete invalid email addresses?"):
         newEmails = returnOnlyValid(newEmails)
     else:
         print(printArrow() +
