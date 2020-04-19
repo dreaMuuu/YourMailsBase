@@ -1,5 +1,5 @@
 from MailsBase import MailsBase
-from functions import returnWithoutClones, returnOnlyValid, yesOrNo
+from functions import returnWithoutClones, returnOnlyValid, yesOrNo, openFile, saveFile
 import sys
 import time
 import easygui
@@ -10,8 +10,8 @@ newEmails = []
 
 print("Before using app make sure that your base is preapred correctly")
 print("Choose .txt file with your base: ")
-time.sleep(1)
-currentBasePath = easygui.fileopenbox()
+time.sleep(2)
+currentBasePath = openFile()
 if yesOrNo("Are you sure you want to use " + currentBasePath + " file?"):
     actualBase = MailsBase(currentBasePath)
     actualBase.loadEmailAddresses()
@@ -27,8 +27,7 @@ if yesOrNo("Do you want to delete incorrect email addresses?"):
     newEmails = returnOnlyValid(newEmails)
 else:
     print("Ok, so i am not deleting incorrect email addresses.")
-print("Pass name for new file WITHOUT EXTENSION (like .txt")
-newBasePath = "./lists/" + input("> ") + ".txt"
+newBasePath = saveFile()
 newBase = MailsBase(newBasePath)
 newBase.pushMails(newEmails)
 newBase.saveBase()
