@@ -13,7 +13,7 @@ def returnWithoutClones(currentEmails):
             print("> deleted clone")
             countOfClones += 1
             time.sleep(0.2)
-    print("Count of deleted clones: " + str(countOfClones))
+    print("> Count of deleted clones: " + str(countOfClones))
     return newEmails
 
 
@@ -27,21 +27,21 @@ def returnOnlyValid(currentEmails):
             print("> deleted invalid address")
             countOfInvalid += 1
             time.sleep(0.2)
-    print("Count of deleted not valid addresses: " + str(countOfInvalid))
+    print("> Count of deleted not valid addresses: " + str(countOfInvalid))
     return newEmails
 
 
 def yesOrNo(question):
-    while "Press only Y or N!":
+    while True:
         reply = str(input(question + ' (y/n): ')).lower().strip()
         if reply[0] == 'y':
             return True
-        if reply[0] == 'n':
+        elif reply[0] == 'n':
             return False
 
 
 def openFile():
-    return easygui.fileopenbox(title="Choose your base file")
+    return easygui.fileopenbox(title="Choose your base file", default="*.txt")
 
 
 def saveFile():
