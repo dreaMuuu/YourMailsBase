@@ -1,14 +1,17 @@
 from MailsBase import MailsBase
 from functions import returnWithoutClones, returnOnlyValid, yesOrNo
 import sys
+import time
+import easygui
 
 currentBasePath = ""
 newBasePath = ""
 newEmails = []
 
-print("Before using app, be sure your emailsList is in txt file in right place (how to prepare emails list you can read in readme")
-print("Pass name of file with current base with extension: ")
-currentBasePath = input(">")
+print("Before using app make sure that your base is preapred correctly")
+print("Choose .txt file with your base: ")
+time.sleep(1)
+currentBasePath = easygui.fileopenbox()
 if yesOrNo("Are you sure you want to use " + currentBasePath + " file?"):
     actualBase = MailsBase(currentBasePath)
     actualBase.loadEmailAddresses()

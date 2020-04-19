@@ -1,7 +1,7 @@
 class MailsBase:
 
     def __init__(self, path):
-        self.path = "./lists/" + path
+        self.path = path
         self.mails = []
 
     def loadEmailAddresses(self):
