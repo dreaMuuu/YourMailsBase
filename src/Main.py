@@ -19,8 +19,6 @@ if yesOrNo("Are you sure you want to use " + currentBasePath + " file?"):
 else:
     print("Ok, so i am closing program")
     sys.exit()
-print("Pass name of new file containing Emails Base with extension")
-newBasePath = input(">")
 if yesOrNo("Do you want to delete clones?"):
     newEmails = returnWithoutClones(newEmails)
 else:
@@ -29,6 +27,8 @@ if yesOrNo("Do you want to delete incorrect email addresses?"):
     newEmails = returnOnlyValid(newEmails)
 else:
     print("Ok, so i am not deleting incorrect email addresses.")
+print("Pass name for new file WITHOUT EXTENSION (like .txt")
+newBasePath = "./lists/" + input("> ") + ".txt"
 newBase = MailsBase(newBasePath)
 newBase.pushMails(newEmails)
 newBase.saveBase()
