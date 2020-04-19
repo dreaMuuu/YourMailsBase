@@ -41,7 +41,7 @@ def yesOrNo(question):
 
 
 def openFile():
-    return easygui.fileopenbox()
+    return easygui.fileopenbox(title="Choose your base file")
 
 
 def saveFile():

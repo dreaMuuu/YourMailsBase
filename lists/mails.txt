@@ -1,0 +1,12 @@
+biuro@firma.pl
+sklep@firma.pl
+draw@draw.pl
+drawing@com.com
+python@files.com
+python@doc.eu
+python.document@op.fm
+test@test.fr
+testing@tested
+edit@edit.pl
+testingw@wp.pl
+pyth@python.net

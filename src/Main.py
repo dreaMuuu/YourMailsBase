@@ -9,7 +9,6 @@ newBasePath = ""
 newEmails = []
 
 print("> YourMailsBase - version 1.0.0 - copyrights @ Piotr Filipek, dreamalltime")
-time.sleep(1)
 print("> Before using app make sure that your base is preapred correctly")
 print("> Choose .txt file with your base: ")
 input("> Press any key to open files window...")
