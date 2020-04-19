@@ -1,6 +1,7 @@
 from MailsBase import MailsBase
 from functions import returnWithoutClones, returnOnlyValid, saveFile, openFile, yesOrNo, printArrow, printWelcomeMessage
 from termcolor import colored
+from colorama import init
 import sys
 import time
 import easygui
@@ -53,5 +54,7 @@ def run():
     newBase.saveBase()
     print(printArrow() +
           " Your email addresses base is actual. You will find it here: " + newBasePath)
+    print(printArrow() +
+          colored(" Thanks for using this App :)", 'green'))
     print(printArrow(), end='')
     input(" Press ENTER to finish...")

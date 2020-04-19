@@ -45,11 +45,11 @@ def yesOrNo(question):
 
 
 def printWelcomeMessage():
-    print(colored("# YourMailsBase - version 1.0.0 - copyrights @ Piotr Filipek, dreamalltime #", 'blue'))
+    print(colored("# YourMailsBase - version 1.0.0 - copyrights @ Piotr Filipek, dreamalltime #", 'cyan'))
 
 
 def printArrow():
-    return colored('>', 'red')
+    return colored('>', 'magenta')
 
 
 def openFile():
