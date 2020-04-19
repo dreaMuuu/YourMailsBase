@@ -42,10 +42,13 @@ def yesOrNo(question):
     while True:
         print(printArrow(), end="")
         reply = str(input(question + ' (y/n): ')).lower().strip()
-        if reply[0] == 'y':
-            return True
-        elif reply[0] == 'n':
-            return False
+        try:
+            if reply[0] == 'y':
+                return True
+            elif reply[0] == 'n':
+                return False
+        except:
+            pass
 
 
 def printWelcomeMessage():
