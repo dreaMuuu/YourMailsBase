@@ -3,6 +3,7 @@ from colorama import init
 from termcolor import colored
 import easygui
 import time
+import sys
 
 
 def returnWithoutClones(currentEmails):
@@ -37,6 +38,7 @@ def returnOnlyValid(currentEmails):
 
 def yesOrNo(question):
     while True:
+        print(printArrow(), end="")
         reply = str(input(question + ' (y/n): ')).lower().strip()
         if reply[0] == 'y':
             return True
@@ -49,13 +51,34 @@ def printWelcomeMessage():
 
 
 def printArrow():
-    return colored('>', 'magenta')
+    return colored('>>', 'magenta')
 
 
 def openFile():
-    return easygui.fileopenbox(title="Choose your base file", default="*.txt")
+    error = " You didint choose file! Do you want to try again? (If no i will close the program)"
+    repeater = True
+    while repeater:
+        path = easygui.fileopenbox(
+            title="Choose your base file", default="*.txt")
+        if path is None:
+            if not yesOrNo(error):
+                print(printArrow() + " Ok, so i am closing program.")
+                sys.exit()
+        else:
+            repeater = False
+    return path
 
 
 def saveFile():
-    return easygui.filesavebox(
-        title="Choose where to save your base", default='mails.txt')
+    error = " You didint choose path! Do you want to try again? (If no i will close the program)"
+    repeater = True
+    while repeater:
+        path = easygui.filesavebox(
+            title="Choose where to save your base", default='mails.txt')
+        if path is None:
+            if not yesOrNo(error):
+                print(printArrow() + " Ok, so i am closing program.")
+                sys.exit()
+        else:
+            repeater = False
+    return path

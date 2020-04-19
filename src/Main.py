@@ -22,7 +22,6 @@ def run():
     print(printArrow(), end='')
     input(" Press ENTER to open files window...")
     actualBasePath = openFile()
-    print(printArrow(), end='')
     if yesOrNo(" Are you sure you want to use " + actualBasePath + " file?"):
         actualBase = MailsBase(actualBasePath)
         actualBase.loadEmailAddresses()
@@ -32,13 +31,11 @@ def run():
               " Ok, so i am closing program")
         time.sleep(2)
         sys.exit()
-    print(printArrow(), end='')
     if yesOrNo(" Do you want to delete clones?"):
         newEmails = returnWithoutClones(newEmails)
     else:
         print(printArrow() +
               " Ok, so i am not deleting clones")
-    print(printArrow(), end='')
     if yesOrNo(" Do you want to delete invalid email addresses?"):
         newEmails = returnOnlyValid(newEmails)
     else:
