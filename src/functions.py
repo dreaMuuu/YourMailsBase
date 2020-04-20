@@ -10,6 +10,7 @@ def returnWithoutClones(currentEmails):
     newEmails = []
     countOfClones = 0
     for mail in currentEmails:
+        mail.lower()
         if not (mail in newEmails):
             newEmails.append(mail)
             print(printArrow() + colored(mail, 'green'))
