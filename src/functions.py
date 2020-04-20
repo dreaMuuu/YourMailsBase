@@ -15,7 +15,7 @@ def returnWithoutClones(currentEmails):
             newEmails.append(mail)
             print(printArrow() + colored(mail, 'green'))
         else:
-            print(printArrow() + colored(mail, 'red'))
+            print(printArrow() + colored("(deleted) " + mail, 'red'))
             countOfClones += 1
         time.sleep(0.05)
     print(printArrow() + " Count of deleted clones: " +
@@ -31,7 +31,7 @@ def returnOnlyValid(currentEmails):
             newEmails.append(mail)
             print(printArrow() + colored(mail, 'green'))
         else:
-            print(printArrow() + colored(mail, 'red'))
+            print(printArrow() + colored("(deleted) " + mail, 'red'))
             countOfInvalid += 1
         time.sleep(0.05)
     print(printArrow() + " Count of deleted not valid addresses: " +
