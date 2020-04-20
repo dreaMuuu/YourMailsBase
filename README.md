@@ -27,9 +27,10 @@ There you will find full instruction of using YMB.
 * [YMB v.04.20.1](#) - first version of YMB, just released. 
 
 ## How it looks?
-
-
-
-
-### Author
+![YMB running]("./screenshots/sc1")
+![YMB running]("./screenshots/sc2")
+![YMB running]("./screenshots/sc3")
+![YMB running]("./screenshots/sc4")
+![YMB running]("./screenshots/sc5")
+## Author
 * **Piotr "dreaMu" Filipek** 
