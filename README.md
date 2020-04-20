@@ -7,7 +7,7 @@ YMB automates processing huge amounts of addresses and updates even big bases in
 ### Requirements
 The only thing that you need to run YMB is a computer with Windows OS (Linux and MacOS will be supported soon).
 ### Installing
-To get YMB on your computer just download this .zip file from [here](#). 
+To get YMB on your computer just download the newest version .zip file from [here](https://github.com/dreaMuuu/YourMailsBase/releases/tag/v.4.20.1). 
 Extract files in your prefered place and voilà!
 ### Before using! 
 Before running YMB first time, make sure that you have corretly prepared addresses base. For more instructions open *'instructions.txt'*. 
@@ -22,9 +22,9 @@ There you will find full instruction of using YMB.
 
 ## Versioning
 ### Current version
-* [YMB v.04.20.1](#) - first version of YMB, just released. 
+* [YMB v.04.20.1](https://github.com/dreaMuuu/YourMailsBase/releases/tag/v.4.20.1) - first version of YMB, just released. 
 ### Earlier versions
-* [YMB v.04.20.1](#) - first version of YMB, just released. 
+* [YMB v.04.20.1](https://github.com/dreaMuuu/YourMailsBase/releases/tag/v.4.20.1) - first version of YMB, just released. 
 
 ## How it looks?
 ![YMB running](screenshots/sc1.PNG)
