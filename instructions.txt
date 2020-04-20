@@ -1,0 +1,35 @@
+------- INSTRUCTIONS FILE FOR YourMailsBase -------
+
+How to use application: 
+
+1. Prepare file with your mail addresses base (like in example below)
+2. Run app by double clicking shorcut 
+3. Follow instructions and choose *.txt file with prepared base
+4. Confirm that you want to use this file by pressing 'y'
+5. Choose if you want to delete cloned mails or not, it means that it will delete every 
+duplicate of mail which is already exisiting in file. 
+6. After this process you will be asked if you want to delete not valid e-mails or not,
+it means that every mail which is not valid will be deleted from base. 
+7. At the end you will be asked for choose place where program should save file with
+updated mails base. 
+8. When program will finish you will be able to see updated base in place where you saved it. 
+9. And voilà! You have valid mail addresses base without dupilcates. 
+
+How file with addresses should look: 
+
+-------------- EXAMPLE STARTS BELOW --------------
+email@domain.com 
+email@domain.com
+email@domain.com 
+email@domain.com
+email@domain.com 
+email@domain.com
+email@domain.com 
+email@domain.com
+------------------- EXAMPLE END -------------------
+
+In file "example.txt" you can see example addresses which you can use to test program. 
+
+Thanks for using my app! 
+
+
