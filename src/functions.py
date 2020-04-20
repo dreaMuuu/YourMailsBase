@@ -13,13 +13,16 @@ def returnWithoutClones(currentEmails):
         mail.lower()
         if not (mail in newEmails):
             newEmails.append(mail)
-            print(printArrow() + colored(mail, 'green'))
+            print(printArrow() + " " + colored(mail, 'green'))
         else:
-            print(printArrow() + colored("(deleted) " + mail, 'red'))
+            print(printArrow() + " " + colored("(deleted) " + mail, 'red'))
             countOfClones += 1
         time.sleep(0.05)
+    print(printArrow() + " ---------------")
     print(printArrow() + " Count of deleted clones: " +
           colored(str(countOfClones), 'green'))
+    print(printArrow() + " At this moment your base have: " +
+          colored(str(len(newEmails)), 'green') + " addresses")
     return newEmails
 
 
@@ -29,13 +32,16 @@ def returnOnlyValid(currentEmails):
     for mail in currentEmails:
         if validate_email(mail):
             newEmails.append(mail)
-            print(printArrow() + colored(mail, 'green'))
+            print(printArrow() + " " + colored(mail, 'green'))
         else:
-            print(printArrow() + colored("(deleted) " + mail, 'red'))
+            print(printArrow() + " " + colored("(deleted) " + mail, 'red'))
             countOfInvalid += 1
         time.sleep(0.05)
+    print(printArrow() + " ---------------")
     print(printArrow() + " Count of deleted not valid addresses: " +
           colored(str(countOfInvalid), 'green'))
+    print(printArrow() + " At this moment your base have: " +
+          colored(str(len(newEmails)), 'green') + " addresses")
     return newEmails
 
 
