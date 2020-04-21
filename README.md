@@ -1,6 +1,6 @@
 # YMB (YourMailsBase)
 
-YMB is easy way to valid your mails addresses base, by checking correctness of every address and deleting duplicated items. 
+YMB is easy way to verify your mails addresses base, by checking correctness of every address and deleting duplicated items. 
 YMB automates processing huge amounts of addresses and updates even big bases in just a seconds. 
 
 ## Getting Started 
@@ -32,5 +32,10 @@ There you will find full instruction of using YMB.
 ![YMB running](screenshots/sc3.PNG)
 ![YMB running](screenshots/sc4.PNG)
 ![YMB running](screenshots/sc5.PNG)
+
+## ToDo's
+* *Installer for MacOS and Linux*
+* *Fix bug with .exe shortcut*
+* *Add alphabetical sorting of addresses*
 ## Author
 * **Piotr "dreaMu" Filipek** 
